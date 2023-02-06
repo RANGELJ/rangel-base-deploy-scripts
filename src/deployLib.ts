@@ -1,5 +1,5 @@
 import { execa } from 'execa'
-import tsBuildAndCopyPackageFiles from './tsBuildAndCopyPackageFiles'
+import tsBuildAndCopyPackageFiles from './tsBuildAndCopyPackageFiles.js'
 
 type Args = {
     sourceDir: string;

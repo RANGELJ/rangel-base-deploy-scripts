@@ -1,6 +1,5 @@
 // @ts-check
 import deployLib from 'rangel-base-deploy-scripts/es6/deployLib.js'
-import { execa } from 'execa'
 import { distDir, rootDir } from './paths.js'
 
 const main = async () => {
