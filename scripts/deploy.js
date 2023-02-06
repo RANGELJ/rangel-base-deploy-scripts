@@ -1,23 +1,12 @@
 // @ts-check
+import deployLib from 'rangel-base-deploy-scripts/es6/deployLib.js'
 import { execa } from 'execa'
 import { distDir, rootDir } from './paths.js'
 
 const main = async () => {
-    await execa('npm', [
-        'run',
-        'build',
-    ], {
-        cwd: rootDir,
-        stdio: 'inherit',
-    })
-
-    await execa('npm', [
-        'publish',
-        '--userconfig',
-        '~/.npmrc_personal'
-    ], {
-        cwd: distDir,
-        stdio: 'inherit',
+    await deployLib({
+        sourceDir: rootDir,
+        targetDir: distDir,
     })
 }
 
