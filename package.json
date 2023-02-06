@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "execa": "^6.1.0",
-    "fs-extra": "^11.1.0"
+    "fs-extra": "^11.1.0",
+    "rangel-base-deploy-scripts": "^1.0.1"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
