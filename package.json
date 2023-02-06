@@ -1,6 +1,6 @@
 {
   "name": "rangel-base-deploy-scripts",
-  "version": "2.0.4",
+  "version": "3.0.4",
   "description": "Base scripts to make deployments to npm from different repos that I have",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "execa": "^6.1.0",
     "fs-extra": "^11.1.0",
-    "rangel-base-deploy-scripts": "^1.0.3"
+    "rangel-base-deploy-scripts": "^2.0.4"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
