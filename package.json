@@ -1,6 +1,6 @@
 {
   "name": "rangel-base-deploy-scripts",
-  "version": "1.0.4",
+  "version": "2.0.4",
   "description": "Base scripts to make deployments to npm from different repos that I have",
   "main": "index.js",
   "scripts": {

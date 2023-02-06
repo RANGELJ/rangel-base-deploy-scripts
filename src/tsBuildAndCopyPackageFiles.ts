@@ -16,27 +16,12 @@ const tsBuildAndCopyPackageFiles = async ({
     await fs.copy(path.resolve(sourceDir, 'package.json'), path.resolve(targetDir, 'package.json'))
     await fs.copy(path.resolve(sourceDir, 'package-lock.json'), path.resolve(targetDir, 'package-lock.json'))
 
-    const commonjsDir = path.resolve(targetDir, 'commonjs')
-
     await execa('npx', [
         'tsc',
         '--outDir',
-        commonjsDir,
+        targetDir,
         '--module',
         'commonjs',
-    ], {
-        cwd: sourceDir,
-        stdio: 'inherit',
-    })
-
-    const es6Dir = path.resolve(targetDir, 'es6')
-
-    await execa('npx', [
-        'tsc',
-        '--outDir',
-        es6Dir,
-        '--module',
-        'ES6',
     ], {
         cwd: sourceDir,
         stdio: 'inherit',
