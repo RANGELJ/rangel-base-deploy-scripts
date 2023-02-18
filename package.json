@@ -1,11 +1,10 @@
 {
   "name": "rangel-base-deploy-scripts",
-  "version": "3.0.4",
+  "version": "5.0.1",
   "description": "Base scripts to make deployments to npm from different repos that I have",
   "main": "index.js",
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "deploy": "node ./scripts/deploy.js"
+    "deploy": "node ./scripts/deploy.mjs"
   },
   "type": "module",
   "author": "Rangel Peralta Jorge Luis",
@@ -13,7 +12,7 @@
   "dependencies": {
     "execa": "^6.1.0",
     "fs-extra": "^11.1.0",
-    "rangel-base-deploy-scripts": "^2.0.4"
+    "rangel-base-deploy-scripts": "^3.0.4"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
